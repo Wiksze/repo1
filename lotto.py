@@ -12,3 +12,10 @@ for i in range(6):
 
     
 
+liczby = [1,4,2,6,7]
+typy = set([1,2,3,4,5])
+trafione = set(liczby) & typy
+if trafione:
+   print(len(trafione))
+
+print(trafione)
