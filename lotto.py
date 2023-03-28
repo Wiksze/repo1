@@ -1,6 +1,9 @@
+import random
+
 for q in range(6):
     print("wybiez numer od 1do 49")
-import random
+
+
 liczby=[]
 for i in range(6):
     los=random.randint(1, 49)
