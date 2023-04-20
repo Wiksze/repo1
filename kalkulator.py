@@ -5,6 +5,14 @@ def calc(operator, x, y):
         return x + y
     elif operator == "-":
         return x - y
+    elif operator == "**":
+        return x ** y
+    elif operator == "%":
+        if y==0:
+             return print("niemoźna dzielić przez 0")
+        else:
+            return x % y
+    
     elif operator == "*":
         return x * y
     elif operator == "/":
