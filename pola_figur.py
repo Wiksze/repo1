@@ -1,3 +1,4 @@
+import math
 def calc(operator, x, y):       
 
     if operator == "+":
@@ -23,25 +24,63 @@ def calc(operator, x, y):
     else:
         return None
 
-def calc(figura , x, y):       
+def calc(figura):       
 
     if figura == "kwadrat":
-        return x + y
+        print("podaj a")
+        a=int(input())
+        return a * a
     elif figura == "prostokąt":
-        return x - y
-    elif figura == "**":
-        return x ** y
-    elif figura == "%":
-        return x ** y
-       
+        print("podaj a")
+        a=int(input())
+        print("podaj b")
+        b=int(input())
+        return a * b
+    elif figura == "trójkąt":
+        print("podaj a")
+        a=int(input())
+        print("podaj h")
+        h=int(input())
+        return a * h / 2
+    elif figura == "romb":
+        print("podaj e")
+        e=int(input())
+        print("podaj f")
+        f=int(input())
+        return e * f / 2
+    elif figura == "trapez":
+        print("podaj a")
+        a=int(input())
+        print("podaj b")
+        b=int(input())
+        print("podaj h")
+        h=int(input())
+        return (a + b) * h / 2
+    elif figura == "deltoid":
+        print("podaj a")
+        a=int(input())
+        print("podaj b")
+        b=int(input())
+        return a * b
+    elif figura == "koło":
+        print("podaj r")
+        r=int(input())
+        return math.pi * r**2
+    elif figura == "równoległobok":
+        print("podaj a")
+        a=int(input())
+        print("podaj h")
+        h=int(input())
+        return a * h
+    elif figura == "elipsaeli":
+        print("podaj a")
+        a=int(input())
+        print("podaj b")
+        b=int(input())
+        return a * b * math.pi
     else:
         return None
 print("podaj figurę")    
-P=input()
+figura=input()
 
-print("podaj x") 
-
-print("podaj y") 
-y=int(input())
-
-print(calc(figura, x, y))
+print(calc(figura))
