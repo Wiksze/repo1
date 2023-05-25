@@ -1,17 +1,16 @@
 
 jednosci = ["", "I", "II", "III", "IV", "V", "VI", "VII", "IIX", "IX"]
-dziesiatki = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "XXC", "CX"]
+dziesiatki = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "XXC", "XC"]
 setki = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "CCM", "CM"]
 tys = ["","M","MM","MMM","Mↁ","ↁ","ↁM","ↁMM","ↁMMM","Mↂ "]
 dtys = ["","ↂ ","ↂ ↂ ","ↂ ↂ ↂ "]
 ilosc = 0
+
 print("tylko liczby mniejsze od 40000!")
 cyfry = (input("podaj liczbę\n"))
-cyfry = int(ilosc)
-print(ilosc)
-print(cyfry)
+ilosc = cyfry
 
-if ilosc >= 40000:
+if int(ilosc) >= 40000:
 	cyfry = (input("zbyt wysoka liczba\n Podaj liczbę jeszcze raz"))
 
 while len(cyfry) < 5:
