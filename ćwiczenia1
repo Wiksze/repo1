@@ -12,7 +12,7 @@ while i < ile:
         i = i + 1
 
 for i in range(3):
-    print("Wytypuj 6 liczb od 1 do 49 liczb: ")
+    print("Wybiez 6 liczb od 1 do 49: ")
     typy = set()
     i = 0
     while i < ile:
